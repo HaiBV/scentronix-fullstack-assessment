@@ -55,7 +55,7 @@ export const Breadcrumbs = () => {
         {breadcrumbs.map((breadcrumb, i) => (
           <Link href={breadcrumb.href} passHref key={i}>
             <Typography fontWeight={600} textTransform={"capitalize"}>
-              {breadcrumb.breadcrumb}
+              {breadcrumb.breadcrumb.replaceAll("-", " ")}
             </Typography>
           </Link>
         ))}

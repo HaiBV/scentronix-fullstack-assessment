@@ -23,7 +23,7 @@ const RecipeDetails = ({ recipeId }: { recipeId: string }) => {
             <Breadcrumbs />
           </Box>
           <Typography variant="h2" sx={{ mt: 2, fontWeight: "bold" }}>
-            Whole-grain Banana Bread {recipeId}
+            {recipeId.replaceAll("-", " ")}
           </Typography>
         </Box>
         <Box>
