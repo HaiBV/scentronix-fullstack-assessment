@@ -13,14 +13,14 @@ import AddOutlinedIcon from "@mui/icons-material/AddOutlined";
 import PrintOutlinedIcon from "@mui/icons-material/PrintOutlined";
 import Link from "@mui/material/Link";
 
-import BreadCumb from "@/components/shared/BreadCumb";
+import Breadcrumbs from "@/components/shared/Breadcrumbs";
 const RecipeDetails = ({ recipeId }: { recipeId: string }) => {
   return (
     <Box component="main" sx={{ display: "flex", gap: 5, maxWidth: "1200px", mx: "auto", mt: 5 }}>
       <Box sx={{ flex: 1 }}>
         <Box component="header">
           <Box>
-            <BreadCumb />
+            <Breadcrumbs />
           </Box>
           <Typography variant="h2" sx={{ mt: 2, fontWeight: "bold" }}>
             Whole-grain Banana Bread {recipeId}
